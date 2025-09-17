@@ -24,15 +24,25 @@ h1 {
 /* Utils */
 .my-container {
     width: 80%;
-    display: flex;
-    justify-content: space-between;
     margin: 0 auto;
     /* DEBUG */
     background-color: grey;
 }
 
+#card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 /* Cards */
 #card {
     width: 480px;
+    padding: 20px;
+    margin-bottom: 50px;
     background-color: #fff;
+}
+
+#card-img {
+    width: 100%;
 }
