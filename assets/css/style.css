@@ -1,0 +1,32 @@
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Generics */
+body {
+    background-image: url(../img/cork.png);
+    font-family: "Edu TAS Beginner", cursive;
+}
+
+header {
+    background-image: url(../img/wall.png);
+}
+
+h1 {
+    font-size: 6rem;
+    text-align: center;
+}
+
+/* Utils */
+.my-container {
+    width: 80%;
+    display: flex;
+    margin: 0 auto;
+    /* DEBUG */
+    background-color: grey;
+}
+
+/* Cards */
