@@ -4,6 +4,7 @@ const apiRef = "https://lanciweb.github.io/demo/api/pictures/";
 // OUTPUT
 const fullCard = document.getElementById("card-container");
 
+// CHIAMATA AJAX PER GENERARE DATI PER LE CARD
 axios.get(apiRef).then((response) => {
     const posts = response.data;
 
@@ -13,6 +14,7 @@ axios.get(apiRef).then((response) => {
         // console.log(postElement);
 
         postsList += `<div id="card">
+        <img class="pin" src="assets/img/pin.svg">
         <img id="card-img" src="${postElement.url}">
         <div class="card-body">
             <p id="date">${postElement.date}</p>
@@ -21,5 +23,5 @@ axios.get(apiRef).then((response) => {
     </div>`;
     });
     fullCard.innerHTML = postsList;
-})
+});
 
