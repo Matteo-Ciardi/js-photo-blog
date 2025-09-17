@@ -1,0 +1,22 @@
+@media screen and (max-width: 375px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    .my-container {
+        width: 90%;
+    }
+
+    #card {
+        width: 100%;
+        margin: 0 10px 50px;
+    }
+
+    .pin {
+        left: 160px;
+    }
+
+    #title {
+        font-size: 2.5rem;
+    }
+}
