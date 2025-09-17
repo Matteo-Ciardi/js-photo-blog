@@ -19,7 +19,7 @@ Inseriamo un foglio JavaScript ed effettuiamo una chiamata AJAX all’API, sfrut
 Font utilizzati:
 
 - Titoli:  ‘Edu Tas Beginner’, sans-serif;
-- Ate: ‘Sometype Mono’, ‘monospace’;
+- Date: ‘Sometype Mono’, ‘monospace’;
 
 ## Bonus
 

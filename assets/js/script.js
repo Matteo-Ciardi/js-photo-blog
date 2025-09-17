@@ -6,22 +6,26 @@ const fullCard = document.getElementById("card-container");
 
 // CHIAMATA AJAX PER GENERARE DATI PER LE CARD
 axios.get(apiRef).then((response) => {
+
     const posts = response.data;
 
     let postsList = "";
 
     posts.forEach(postElement => {
-        // console.log(postElement);
 
-        postsList += `<div id="card">
-        <img class="pin" src="assets/img/pin.svg">
-        <img id="card-img" src="${postElement.url}">
-        <div class="card-body">
-            <p id="date">${postElement.date}</p>
-            <p id="title">${postElement.title.toUpperCase()}</p>
-        </div>
-    </div>`;
+        postsList += `
+        <div id="card">
+            <img class="pin" src="assets/img/pin.svg">
+            <img id="card-img" src="${postElement.url}">
+            <div class="card-body">
+                <p id="date">${postElement.date}</p>
+                <p id="title">${postElement.title.toUpperCase()}</p>
+            </div>
+        </div> `;
+
     });
+
     fullCard.innerHTML = postsList;
+
 });
 

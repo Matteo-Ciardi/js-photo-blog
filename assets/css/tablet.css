@@ -1,15 +1,11 @@
 @media screen and (min-width: 375px) and (max-width: 768px) {
     .my-container {
-        width: 80%;
+        width: 85%;
     }
 
     #card {
         width: calc(50% - 20px);
         margin: 0 10px 50px;
-    }
-
-    .pin {
-        left: 145px;
     }
 
     #title {
