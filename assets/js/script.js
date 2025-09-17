@@ -15,8 +15,8 @@ axios.get(apiRef).then((response) => {
         postsList += `<div id="card">
         <img id="card-img" src="${postElement.url}">
         <div class="card-body">
-            <p>${postElement.date}</p>
-            <p>${postElement.title}</p>
+            <p id="date">${postElement.date}</p>
+            <p id="title">${postElement.title.toUpperCase()}</p>
         </div>
     </div>`;
     });
