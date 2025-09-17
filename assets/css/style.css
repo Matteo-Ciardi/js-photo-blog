@@ -32,7 +32,7 @@ h1 {
 }
 
 /* Cards */
-.card {
+#card {
     width: 480px;
     background-color: #fff;
 }
