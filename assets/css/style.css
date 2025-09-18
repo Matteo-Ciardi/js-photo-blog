@@ -35,7 +35,6 @@ h1 {
 
 #overlay {
     position: fixed;
-    display: none;
     width: 100%;
     height: 100%;
     top: 0;
@@ -45,6 +44,10 @@ h1 {
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1000;
     cursor: pointer;
+}
+
+.display {
+    display: none;
 }
 
 /* Cards */
