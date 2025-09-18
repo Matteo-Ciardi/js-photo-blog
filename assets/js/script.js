@@ -33,9 +33,16 @@ axios.get(apiRef).then((response) => {
 
     cards.forEach(cardItem => {
         cardItem.addEventListener("click", () => {
-            
+            overlay.style.display = "flex";
         });
     });
+
+    // FAR SPARIRE OVERLAY
+    const myButton = document.getElementById("button");
+
+    myButton.addEventListener("click", () => {
+        overlay.style.display = "none";
+    })
 });
 
 
