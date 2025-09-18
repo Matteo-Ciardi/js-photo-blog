@@ -16,7 +16,7 @@ axios.get(apiRef).then((response) => {
         postsList += `
         <div class="card">
             <img class="pin" src="assets/img/pin.svg">
-            <img id="card-img" src="${postElement.url}">
+            <img id="card-img" class="img-big" src="${postElement.url}" alt="${postElement.title}>
             <div class="card-body">
                 <p id="date">${postElement.date}</p>
                 <p id="title">${postElement.title.toUpperCase()}</p>
@@ -35,7 +35,7 @@ axios.get(apiRef).then((response) => {
     cards.forEach(cardItem => {
         cardItem.addEventListener("click", () => {
             const img = cardItem.querySelector("#card-img");
-            bigImageBox.innerHTML = `<img src="${img.src}">`;
+            bigImageBox.innerHTML = `<img class="img-big" src="${img.src}">`;
             overlay.style.display = "flex";
         });
     });

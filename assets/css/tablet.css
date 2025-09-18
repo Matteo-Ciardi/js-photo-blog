@@ -3,7 +3,7 @@
         width: 85%;
     }
 
-    #card {
+    .card {
         width: calc(50% - 20px);
         margin: 0 10px 50px;
     }
