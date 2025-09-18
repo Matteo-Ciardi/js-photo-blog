@@ -30,9 +30,12 @@ axios.get(apiRef).then((response) => {
     // RICHIAMARE OVERLAY SUL CLICK
     const cards = document.querySelectorAll(".card");
     const overlay = document.getElementById("overlay");
+    const bigImageBox = document.querySelector(".big-image-box");
 
     cards.forEach(cardItem => {
         cardItem.addEventListener("click", () => {
+            const img = cardItem.querySelector("#card-img");
+            bigImageBox.innerHTML = `<img src="${img.src}">`;
             overlay.style.display = "flex";
         });
     });
