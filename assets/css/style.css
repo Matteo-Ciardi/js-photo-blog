@@ -44,11 +44,24 @@ h1 {
     position: relative;
 }
 
+#card:hover {
+    cursor: pointer;
+    transform: rotate(10deg) scale(1.1);
+    box-shadow: 6px 6px 10px -2px #000;
+    z-index: 900;
+    transition: ease 0.115s;
+}
+
+
 .pin {
     position: absolute;
     transform: translate(-50%, -50%);
     top: 0;
     left: 50%;
+}
+
+#card:hover .pin {
+    display: none;
 }
 
 #card-img {
