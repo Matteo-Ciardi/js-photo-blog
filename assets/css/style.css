@@ -21,7 +21,6 @@ h1 {
     text-align: center;
 }
 
-
 /* Utils */
 .my-container {
     width: 70%;
@@ -34,8 +33,22 @@ h1 {
     flex-wrap: wrap;
 }
 
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    cursor: pointer;
+}
+
 /* Cards */
-#card {
+.card {
     width: 400px;
     padding: 20px;
     margin-bottom: 50px;
@@ -44,14 +57,13 @@ h1 {
     position: relative;
 }
 
-#card:hover {
+.card:hover {
     cursor: pointer;
     transform: rotate(10deg) scale(1.1);
     box-shadow: 6px 6px 10px -2px #000;
     z-index: 900;
     transition: ease 0.115s;
 }
-
 
 .pin {
     position: absolute;
@@ -60,7 +72,7 @@ h1 {
     left: 50%;
 }
 
-#card:hover .pin {
+.card:hover .pin {
     display: none;
 }
 

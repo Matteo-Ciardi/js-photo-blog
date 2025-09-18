@@ -14,7 +14,7 @@ axios.get(apiRef).then((response) => {
     posts.forEach(postElement => {
 
         postsList += `
-        <div id="card">
+        <div class="card">
             <img class="pin" src="assets/img/pin.svg">
             <img id="card-img" src="${postElement.url}">
             <div class="card-body">
@@ -27,5 +27,15 @@ axios.get(apiRef).then((response) => {
 
     fullCard.innerHTML = postsList;
 
+    // RICHIAMARE OVERLAY SUL CLICK
+    const cards = document.querySelectorAll(".card");
+    const overlay = document.getElementById("overlay");
+
+    cards.forEach(cardItem => {
+        cardItem.addEventListener("click", () => {
+            
+        });
+    });
 });
+
 
